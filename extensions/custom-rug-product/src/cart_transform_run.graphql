@@ -1,0 +1,12 @@
+query CartTransformRunInput {
+  cart {
+    lines {
+      id
+      quantity
+      previewImage: attribute(key: "__Product preview image") {
+        key
+        value
+      }
+    }
+  }
+}

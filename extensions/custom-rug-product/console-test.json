@@ -1,0 +1,23 @@
+{
+    "cart": {
+      "lines": [
+        {
+          "id": "gid://shopify/CartLine/1",
+          "quantity": 1,
+          "cost": {},
+          "merchandise": {
+            "__typename": "ProductVariant",
+            "id": "gid://shopify/ProductVariant/123"
+          },
+          "attributes": [{
+            "key": "Product preview image",
+            "value": "https://example.com/test.jpg"
+          }],
+          "previewImage": {
+            "value": "https://example.com/test.jpg"
+          }
+        }
+      ]
+    }
+  }
+  
