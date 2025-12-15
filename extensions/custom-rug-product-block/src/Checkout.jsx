@@ -19,7 +19,7 @@ function Extension() {
     (attr) => attr.key === '__Original image'
   );
   const commentsAttribute = cartLine.attributes.find(
-    (attr) => attr.key === '__Comments'
+    (attr) => attr.key === '__Comments' || attr.key === 'Comments  Adjustments  Requests'
   );
   const [sendProof, setSendProof] = useState(
     sendProofAttribute?.value === 'yes'
@@ -93,11 +93,11 @@ function Extension() {
           </s-text>
         </s-link>}
 
-        <s-checkbox
+        {sendProofAttribute?.value != null && <s-checkbox
             label="Send proof before production"
             checked={sendProof}
             onChange={handleCheckboxChange}
-        />
+        />}
 
         {previewLinkUrl && <s-box
           padding="base"

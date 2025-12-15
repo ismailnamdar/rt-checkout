@@ -36,7 +36,7 @@ function optionallyBuildLineUpdateOperation(cartLine: CartLine): LineUpdateOpera
   if (previewImage) {
     return {
       cartLineId: cartLine.id,
-      title: "Your Custom Rug",
+      title: "Your Design",
       image: {
         url: previewImage
       }
